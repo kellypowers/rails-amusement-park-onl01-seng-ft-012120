@@ -1,0 +1,11 @@
+<%# form for user, signing in form %>
+<%= form_tag('/users', method: 'post') do %>
+    <%=label_tag( :name, "Your Name")%>
+     <%=text_field_tag :name%>
+
+    <%=label_tag :password%>
+    <%=password_field_tag :password%>
+
+    <%=submit_tag "Sign In"%>
+
+<%end%>
